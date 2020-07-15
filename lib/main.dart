@@ -46,13 +46,15 @@ class _ExpState extends State<Exp> {
                                   child: Text('You clicked on the button',
                                       style: TextStyle(
                                           color: Colors.red,
-                                          backgroundColor: Colors.blue)),
+                                          backgroundColor: Colors.grey,
+                                        letterSpacing: 1.0
+                                      )
+                                  ),
                                   toastDuration: Duration(seconds: 2),
                                   gravity: ToastGravity.BOTTOM);
                             },
                             child: Text('Hello'),
                           )
-
                         ]
                     )
                 )
