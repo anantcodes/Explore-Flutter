@@ -14,24 +14,6 @@ class Exp extends StatefulWidget {
 
 class _ExpState extends State<Exp> {
 
-
-
-  String username;
-  String password;
-
-  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-
-  Widget buildUsername(){
-    return null;
-  }
-
-  Widget buildPassword(){
-    return null;
-  }
-
-
-
-
   @override
   Widget build(BuildContext context) {
 //    String password='hi';
