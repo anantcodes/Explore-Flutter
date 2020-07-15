@@ -14,10 +14,13 @@ class Exp extends StatefulWidget {
 
 class _ExpState extends State<Exp> {
 
+
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController passwordController=new TextEditingController();
+
+
   @override
   Widget build(BuildContext context) {
-//    String password='hi';
-//    String username='hi';
 
     return Scaffold(
         appBar: AppBar(
@@ -34,37 +37,47 @@ class _ExpState extends State<Exp> {
                         children: <Widget>[
                           SizedBox(height: 45.0),
                           TextField(
+                            controller: emailController,
                             decoration: InputDecoration(
-                                labelText: 'Enter your username'),
-//                            onFieldSubmitted: (String text) {
-//                              username = text;
-//                            },
+                                labelText: 'Enter your email'),
+
                           ),
                           SizedBox(height: 25.0),
                           TextField(
+                            controller: passwordController,
                             decoration: InputDecoration(
                                 labelText: 'Enter your password'),
-//                            onFieldSubmitted: (String text) {
-//                              password = text;
-//                            },
+
                           ),
                           SizedBox(height: 45.0),
                           FlatButton(
                             color: Colors.blue,
                             onPressed: () {
-//                              if (username == 'anant' && password == 'anant') {
-//                                print(username);
-//                                print(password);
-                                FlutterToast(context).showToast(
-                                    child: Text('You clicked on the button',
-                                        style: TextStyle(
-                                            color: Colors.red,
-                                            backgroundColor: Colors.grey,
-                                            letterSpacing: 1.0)
-                                    ),
-                                    toastDuration: Duration(seconds: 2),
-                                    gravity: ToastGravity.BOTTOM);
+
+                            if(emailController.text=='anant'&& passwordController.text=='anant') {
+                              FlutterToast(context).showToast(
+                                  child: Text('Login successfull',
+                                      style: TextStyle(
+                                          color: Colors.red,
+                                          backgroundColor: Colors.grey,
+                                          letterSpacing: 1.0)
+                                  ),
+                                  toastDuration: Duration(seconds: 2),
+                                  gravity: ToastGravity.BOTTOM);
 //                              }
+                            }
+                            else{
+                              FlutterToast(context).showToast(
+                                  child: Text('Login unsuccessfull',
+                                      style: TextStyle(
+                                          color: Colors.red,
+                                          backgroundColor: Colors.grey,
+                                          letterSpacing: 1.0)
+                                  ),
+                                  toastDuration: Duration(seconds: 2),
+                                  gravity: ToastGravity.BOTTOM);
+                            }
+
                             },
                             child: Text('Next'),
                           )
