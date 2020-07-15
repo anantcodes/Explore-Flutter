@@ -13,6 +13,25 @@ class Exp extends StatefulWidget {
 }
 
 class _ExpState extends State<Exp> {
+
+
+
+  String username;
+  String password;
+
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  Widget buildUsername(){
+    return null;
+  }
+
+  Widget buildPassword(){
+    return null;
+  }
+
+
+
+
   @override
   Widget build(BuildContext context) {
 //    String password='hi';
@@ -32,7 +51,7 @@ class _ExpState extends State<Exp> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           SizedBox(height: 45.0),
-                          TextFormField(
+                          TextField(
                             decoration: InputDecoration(
                                 labelText: 'Enter your username'),
 //                            onFieldSubmitted: (String text) {
@@ -40,7 +59,7 @@ class _ExpState extends State<Exp> {
 //                            },
                           ),
                           SizedBox(height: 25.0),
-                          TextFormField(
+                          TextField(
                             decoration: InputDecoration(
                                 labelText: 'Enter your password'),
 //                            onFieldSubmitted: (String text) {
