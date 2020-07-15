@@ -15,6 +15,9 @@ class Exp extends StatefulWidget {
 class _ExpState extends State<Exp> {
   @override
   Widget build(BuildContext context) {
+//    String password='hi';
+//    String username='hi';
+
     return Scaffold(
         appBar: AppBar(
           title: Text('Explore'),
@@ -32,28 +35,37 @@ class _ExpState extends State<Exp> {
                           TextFormField(
                             decoration: InputDecoration(
                                 labelText: 'Enter your username'),
+//                            onFieldSubmitted: (String text) {
+//                              username = text;
+//                            },
                           ),
                           SizedBox(height: 25.0),
                           TextFormField(
                             decoration: InputDecoration(
                                 labelText: 'Enter your password'),
+//                            onFieldSubmitted: (String text) {
+//                              password = text;
+//                            },
                           ),
                           SizedBox(height: 45.0),
                           FlatButton(
                             color: Colors.blue,
                             onPressed: () {
-                              FlutterToast(context).showToast(
-                                  child: Text('You clicked on the button',
-                                      style: TextStyle(
-                                          color: Colors.red,
-                                          backgroundColor: Colors.grey,
-                                        letterSpacing: 1.0
-                                      )
-                                  ),
-                                  toastDuration: Duration(seconds: 2),
-                                  gravity: ToastGravity.BOTTOM);
+//                              if (username == 'anant' && password == 'anant') {
+//                                print(username);
+//                                print(password);
+                                FlutterToast(context).showToast(
+                                    child: Text('You clicked on the button',
+                                        style: TextStyle(
+                                            color: Colors.red,
+                                            backgroundColor: Colors.grey,
+                                            letterSpacing: 1.0)
+                                    ),
+                                    toastDuration: Duration(seconds: 2),
+                                    gravity: ToastGravity.BOTTOM);
+//                              }
                             },
-                            child: Text('Hello'),
+                            child: Text('Next'),
                           )
                         ]
                     )
