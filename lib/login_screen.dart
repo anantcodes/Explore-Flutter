@@ -9,8 +9,8 @@ class Exp extends StatefulWidget {
 class _ExpState extends State<Exp> {
 
 
-  TextEditingController emailController = new TextEditingController();
-  TextEditingController passwordController=new TextEditingController();
+  TextEditingController emailController = new TextEditingController();      //To store email
+  TextEditingController passwordController=new TextEditingController();     //To store password
 
 
   @override
@@ -31,24 +31,24 @@ class _ExpState extends State<Exp> {
                         children: <Widget>[
                           SizedBox(height: 45.0),
                           TextField(
-                            controller: emailController,
+                            controller: emailController,      //email
                             decoration: InputDecoration(
                                 labelText: 'Enter your email'),
 
                           ),
                           SizedBox(height: 25.0),
                           TextField(
-                            controller: passwordController,
+                            controller: passwordController,   //password
                             decoration: InputDecoration(
                                 labelText: 'Enter your password'),
-                              obscureText: true,
+                              obscureText: true,     //text hiding
                           ),
                           SizedBox(height: 45.0),
                           FlatButton(
                             color: Colors.blue,
                             onPressed: () {
                               if(emailController.text=='anant'&& passwordController.text=='anant') {
-                            Navigator.pushNamed(context, '/home');
+                            Navigator.pushNamed(context, '/home');    //push to next route
                                 FlutterToast(context).showToast(
                                     child: Text('Login successfull',
                                         style: TextStyle(
