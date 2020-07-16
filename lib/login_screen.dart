@@ -59,7 +59,6 @@ class _ExpState extends State<Exp> {
                                     ),
                                     toastDuration: Duration(seconds: 2),
                                     gravity: ToastGravity.BOTTOM);
-
                               }
                               else{
                                 FlutterToast(context).showToast(
@@ -72,7 +71,6 @@ class _ExpState extends State<Exp> {
                                     toastDuration: Duration(seconds: 2),
                                     gravity: ToastGravity.BOTTOM);
                               }
-
                             },
                             child: Text('Next'),
                           )
