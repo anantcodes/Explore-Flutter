@@ -49,7 +49,7 @@ class _ExpState extends State<Exp> {
                             onPressed: () {
 
                               if(emailController.text=='anant'&& passwordController.text=='anant') {
-//                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => new_screen()));
+                            Navigator.pushNamed(context, '/home');
                                 FlutterToast(context).showToast(
                                     child: Text('Login successfull',
                                         style: TextStyle(
@@ -59,7 +59,7 @@ class _ExpState extends State<Exp> {
                                     ),
                                     toastDuration: Duration(seconds: 2),
                                     gravity: ToastGravity.BOTTOM);
-//                              }
+
                               }
                               else{
                                 FlutterToast(context).showToast(
