@@ -41,13 +41,12 @@ class _ExpState extends State<Exp> {
                             controller: passwordController,
                             decoration: InputDecoration(
                                 labelText: 'Enter your password'),
-
+                              obscureText: true,
                           ),
                           SizedBox(height: 45.0),
                           FlatButton(
                             color: Colors.blue,
                             onPressed: () {
-
                               if(emailController.text=='anant'&& passwordController.text=='anant') {
                             Navigator.pushNamed(context, '/home');
                                 FlutterToast(context).showToast(
