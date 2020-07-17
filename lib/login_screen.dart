@@ -48,7 +48,7 @@ class _ExpState extends State<Exp> {
                             color: Colors.blue,
                             onPressed: () {
                               if(emailController.text=='anant'&& passwordController.text=='anant') {
-                            Navigator.pushNamed(context, '/home');    //push to next route
+                            Navigator.pushNamed(context, '/control');    //push to next route
                                 FlutterToast(context).showToast(
                                     child: Text('Login successfull',
                                         style: TextStyle(

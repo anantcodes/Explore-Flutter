@@ -1,4 +1,4 @@
-import 'package:explore_flutter/home.dart';
+import 'package:explore_flutter/control.dart';
 import 'package:flutter/material.dart';
 import 'package:explore_flutter/login_screen.dart';
 
@@ -7,7 +7,7 @@ void main() {
     home: Exp(),
     routes: {
 
-      '/home':(context)=>Home()
+      '/control':(context)=>Control()
     },
   ));
 }
