@@ -2,6 +2,7 @@ import 'package:explore_flutter/aboutApp.dart';
 import 'package:explore_flutter/homePage.dart';
 import 'package:explore_flutter/profilePage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 
 
@@ -76,7 +77,8 @@ class DrawerCodeOnly extends StatelessWidget {
             onTap: () {
               // Update the state of the app.
               // ...
-              Navigator.pop(context);
+              //Navigator.pop(context);
+              SystemChannels.platform.invokeMethod('SystemNavigator.pop');
 //              Navigator.push(context, new MaterialPageRoute(builder: (context)=>new AboutApp()));
 
 
