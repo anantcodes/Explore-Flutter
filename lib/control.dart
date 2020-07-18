@@ -71,6 +71,20 @@ class DrawerCodeOnly extends StatelessWidget {
           ),
 
 
+          ListTile(
+            title: Text('Logout'),
+            onTap: () {
+              // Update the state of the app.
+              // ...
+              Navigator.pop(context);
+//              Navigator.push(context, new MaterialPageRoute(builder: (context)=>new AboutApp()));
+
+
+
+            },
+          ),
+
+
 
         ],
       ),
