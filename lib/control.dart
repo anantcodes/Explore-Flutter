@@ -1,3 +1,4 @@
+import 'package:explore_flutter/aboutApp.dart';
 import 'package:explore_flutter/homePage.dart';
 import 'package:explore_flutter/profilePage.dart';
 import 'package:flutter/material.dart';
@@ -35,12 +36,10 @@ class DrawerCodeOnly extends StatelessWidget {
               color: Colors.blue,
             ),
           ),
+
           ListTile(
             title: Text('Home'),
             onTap: () {
-
-
-
 
               //  Navigator.of(context).pushReplacementNamed('/homePage');
               Navigator.pop(context);
@@ -50,6 +49,7 @@ class DrawerCodeOnly extends StatelessWidget {
               // Navigator.pop(context);
             },
           ),
+
           ListTile(
             title: Text('Profile'),
             onTap: () {
@@ -59,6 +59,19 @@ class DrawerCodeOnly extends StatelessWidget {
               Navigator.push(context, new MaterialPageRoute(builder: (context)=>new ProfilePage()));
             },
           ),
+
+          ListTile(
+            title: Text('About App'),
+            onTap: () {
+              // Update the state of the app.
+              // ...
+              Navigator.pop(context);
+              Navigator.push(context, new MaterialPageRoute(builder: (context)=>new AboutApp()));
+            },
+          ),
+
+
+
         ],
       ),
     );
