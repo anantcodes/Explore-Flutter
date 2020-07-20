@@ -10,13 +10,18 @@ class _ExpState extends State<Exp> {
 
 
   TextEditingController emailController = new TextEditingController();      //To store email
-  TextEditingController passwordController=new TextEditingController();     //To store password
+  TextEditingController passwordController=new TextEditingController();   //To store password
+
+
 
 
   @override
   Widget build(BuildContext context) {
 
+
+
     return Scaffold(
+
         appBar: AppBar(
           title: Text('Explore'),
         ),
