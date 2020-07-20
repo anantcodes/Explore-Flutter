@@ -4,6 +4,8 @@ import 'package:explore_flutter/profilePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'login_screen.dart';
+
 
 
 class Control extends StatefulWidget {
@@ -78,8 +80,15 @@ class DrawerCodeOnly extends StatelessWidget {
               // Update the state of the app.
               // ...
               //Navigator.pop(context);
-              SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+             // SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+//              Navigator.of(context).pop();
+//              Navigator.push(context, new MaterialPageRoute(builder: (context)=>new Exp()));
 //              Navigator.push(context, new MaterialPageRoute(builder: (context)=>new AboutApp()));
+              Navigator.pushAndRemoveUntil(
+                context,
+                MaterialPageRoute(builder: (context) => Exp()),
+                    (Route<dynamic> route) => false,
+              );
 
 
 
