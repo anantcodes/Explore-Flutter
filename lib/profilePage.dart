@@ -1,9 +1,7 @@
 import 'package:explore_flutter/control.dart';
 import 'package:flutter/material.dart';
 
-
 class ProfilePage extends StatelessWidget {
-
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +10,7 @@ class ProfilePage extends StatelessWidget {
         title:new  Text("Profile"),
       ),
       drawer: new DrawerCodeOnly(),
-      body: new Center(child: Text("This is profile page")),
+      body: new Center(child: Text("Profile page")),
       backgroundColor: Colors.red,
     );
   }

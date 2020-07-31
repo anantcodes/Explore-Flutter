@@ -8,7 +8,7 @@ class AboutApp extends StatelessWidget {
         title:new  Text("About App"),
       ),
       drawer: new DrawerCodeOnly(),
-      body: new Center(child: Text("This is about app page")),
+      body: new Center(child: Text("About app page")),
       backgroundColor: Colors.green,
     );
   }

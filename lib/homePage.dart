@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
         title:new  Text("Home"),
       ),
       drawer: new DrawerCodeOnly(),
-      body: new Center(child: Text("This is home page")),
+      body: new Center(child: Text("Home page")),
       backgroundColor: Colors.orange,
     );
   }
