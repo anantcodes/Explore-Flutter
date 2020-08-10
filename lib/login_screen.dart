@@ -23,7 +23,7 @@ class _ExpState extends State<Exp> {
     return Scaffold(
 
         appBar: AppBar(
-          title: Text('Explore'),
+          title: Text('Explore to learn'),
         ),
         body: Center(
             child: Container(
