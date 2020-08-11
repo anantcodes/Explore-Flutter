@@ -52,7 +52,7 @@ class _ExpState extends State<Exp> {
                           FlatButton(
                             color: Colors.blue,
                             onPressed: () {
-                              if(emailController.text=='anant'&& passwordController.text=='anant') {
+                              if(emailController.text=='anant1234@gmail.com'&& passwordController.text=='anant') {
                             Navigator.pushNamed(context, '/control');    //push to next route
                                 FlutterToast(context).showToast(
                                     child: Text('Login successfull',
